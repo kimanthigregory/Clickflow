@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ClickFlow | Crafting Digital Experiences",
+  title: "ClickFlow | Click Connect Convert",
   description:
     "We design and build modern, high-performance websites tailored to your business needs.",
 };
@@ -21,6 +21,23 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-white text-gray-800`}>
+        <head>
+          <link
+            rel="icon"
+            type="image/png"
+            href="../public/favicon-96x96.png"
+            sizes="96x96"
+          />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+          <link rel="shortcut icon" href="../public/favicon.ico" />
+          <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="../public/apple-touch-icon.png"
+          />
+          <meta name="apple-mobile-web-app-title" content="ClickFlow" />
+          <link rel="manifest" href="../public/site.webmanifest" />
+        </head>
         <Header />
         <main>{children}</main>
         <Footer />
