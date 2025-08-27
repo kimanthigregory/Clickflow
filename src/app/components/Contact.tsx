@@ -7,10 +7,10 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Let's Build Something Great
+            Let&apos;s Build Something Great
           </h2>
           <p className="mt-4 text-lg text-gray-300">
-            Have a project in mind? We'd love to hear about it.
+            Have a project in mind? We&apos;d love to hear about it.
           </p>
         </div>
         <div className="max-w-xl mx-auto">

@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-
+import Link from "next/link";
+import Image from "next/image";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
@@ -18,16 +19,17 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="/">
+          <Link href="/">
             {/* Image replaces text logo */}
-            <img
-              src="/clickflow transparent.svg"
+            <Image
+              src="/clickflow transparent.svg" // Make sure this file is in your /public folder
               alt="ClickFlow Logo"
-              width={200}
-              height={200}
-              className="h-40 w-auto object-contain"
+              width={170} // Adjusted for a more typical logo size
+              height={40} // Adjusted for a more typical logo size
+              className="h-40 w-auto" // Let the component handle sizing based on width/height props
+              priority // Add priority to the logo as it's likely in the LCP (Largest Contentful Paint)
             />
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-10">

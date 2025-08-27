@@ -26,7 +26,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-light-gray p-8 rounded-lg">
               <p className="text-gray-700 text-lg italic">
-                "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
               </p>
               <div className="mt-6">
                 <p className="font-bold text-clickflow-blue">
