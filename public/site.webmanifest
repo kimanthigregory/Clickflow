@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "clickFlow",
+  "short_name": "clickFlow",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
