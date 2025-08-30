@@ -1,28 +1,36 @@
 const projects = [
   {
-    title: "Fintech App Redesign",
-    description:
-      "A sleek, user-friendly interface for a mobile banking platform.",
+    title: "Manzi Homes",
+    description: "A modern, professional website for a real estate agency.",
     span: "col-span-1 md:col-span-2",
+    liveSite: "http://manzi-homes-p8hf.vercel.app/",
+    imageUrl: "/Manzi-homes.jpg",
   },
   {
-    title: "E-commerce Store",
-    description: "A high-performance online store for a luxury fashion brand.",
-    span: "col-span-1",
-  },
-  {
-    title: "SaaS Landing Page",
+    title: "Lex & Co. Advocates",
     description:
-      "A conversion-focused landing page for a new software product.",
+      "A website for a legal firm committed to providing personalized legal solutions.",
     span: "col-span-1",
+    liveSite: "https://lex-and-co-advocates.vercel.app/",
+    imageUrl: "/lawyer.jpg",
   },
   {
-    title: "Corporate Website",
-    description: "A professional and modern site for a global consulting firm.",
+    title: "Fairview Gardens",
+    description:
+      "An elegant website for a coffee estate and premium events venue, specializing in weddings.",
+    span: "col-span-1",
+    liveSite: "https://fairviewgarden.co.ke/",
+    imageUrl: "/fairview.jpg",
+  },
+  {
+    title: "Stadium Status",
+    description:
+      "A professional website for an event and experiential marketing agency.",
     span: "col-span-1 md:col-span-2",
+    liveSite: "https://www.stadiumstatus.org/",
+    imageUrl: "/stadiumstatus.jpg",
   },
 ];
-
 const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-light-gray py-20 md:py-28">
@@ -42,15 +50,24 @@ const Portfolio = () => {
               key={index}
               className={`group relative overflow-hidden rounded-lg shadow-lg ${project.span}`}
             >
-              {/* Using a placeholder background image */}
+              {/* This is the updated div for the background image */}
               <div
-                className={`h-80 bg-cover bg-center bg-[url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2940&auto=format&fit=crop')]`}
+                className={`h-80 bg-cover bg-center`}
+                style={{ backgroundImage: `url('${project.imageUrl}')` }}
               ></div>
               <div className="absolute inset-0 bg-clickflow-blue bg-opacity-70 flex flex-col justify-end p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
                 <h3 className="text-2xl font-bold text-white">
                   {project.title}
                 </h3>
                 <p className="text-accent mt-2">{project.description}</p>
+                <a
+                  href={project.liveSite}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block text-white border-b-2 border-accent hover:border-white transition-colors duration-300"
+                >
+                  View Live Site
+                </a>
               </div>
             </div>
           ))}

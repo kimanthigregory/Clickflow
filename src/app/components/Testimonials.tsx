@@ -1,9 +1,9 @@
 const testimonials = [
   {
-    name: "Sarah L.",
-    company: "CEO, Innovate Inc.",
+    name: "Kimanzi G.",
+    company: "Director, Manzi Homes.",
     quote:
-      "ClickFlow transformed our online presence. Their attention to detail and creative vision resulted in a website that exceeded all our expectations. Highly recommended!",
+      "ClickFlow delivered exactly what we needed for Manzi Homes — a website that reflects our brand and connects with our clients. Their attention to detail and ability to bring our ideas to life was impressive. We now have an online presence that gives us confidence in engaging with potential clients.",
   },
   {
     name: "Michael B.",

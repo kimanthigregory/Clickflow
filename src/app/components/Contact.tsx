@@ -63,10 +63,10 @@ const Contact = () => {
           <p className="text-center mt-8 text-gray-400">
             Or email us directly at{" "}
             <a
-              href="mailto:info@clickflow.com"
+              href="mailto:info@clickflow.co.ke"
               className="text-accent hover:underline"
             >
-              info@clickflow.com
+              info@clickflow.co.ke
             </a>
           </p>
         </div>

@@ -7,7 +7,7 @@ const packages = [
     description:
       "Best for small businesses, churches, and startups looking for an affordable online presence.",
     features: [
-      "Single-page design",
+      "5-page design",
       "Mobile-first & fully responsive",
       "Basic SEO (Google visibility)",
       "Contact form with WhatsApp integration",
@@ -18,11 +18,11 @@ const packages = [
   },
   {
     name: "Professional",
-    price: "Ksh 35,000",
+    price: "Ksh 25,000",
     description:
       "Most popular for growing businesses that want to attract more clients online.",
     features: [
-      "Multi-page design (up to 5 pages)",
+      "Multi-page design (up to 10 pages)",
       "Advanced SEO & performance optimization",
       "Blog or news section setup",
       "CRM or Google Forms integration",

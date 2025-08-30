@@ -21,7 +21,7 @@ const Hero = () => {
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#packages"
+            href="#services"
             className="px-6 py-3 rounded-full bg-accent text-clickflow-blue font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300"
           >
             View Our Packages
